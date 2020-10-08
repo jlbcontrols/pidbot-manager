@@ -16,7 +16,7 @@
 * User management, role based restrictions.
  
 # Using Pidbot Manager
-Head to the [Pidbot Manager Wiki](NEED LINK!!!!!!!!!) for user instructions.
+Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ![](./docs/tune-and-log.gif)
 
@@ -28,18 +28,18 @@ Head to the [Pidbot Manager Wiki](NEED LINK!!!!!!!!!) for user instructions.
 * MySQL v8.0.17
 
 ### Setup Option 1: Restore a Gateway Backup
-* Download the .gwbk file - Navigate to [releases](https://github.com/jlbcontrols/PidbotHistorian/releases), click assets, then click on the .gwbk file.
+* Download the .gwbk file - Navigate to [releases](../../releases), click assets, then click on the .gwbk file.
 * Restore the .gwbk following Ignition's [gateway restore instructions](https://docs.inductiveautomation.com/display/DOC80/Gateway+Backup+and+Restore).
-* Follow the instructions in the [Database Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#Database-Setup), [Modules Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#Modules-Setup), and [OPC Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#OPC-Setup) sections below to complete the setup.
+* Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
 
 ### Setup Option 2: Add the project to an existing Ignition Gateway.
-* Download the project file, UDT definitions, and tag group config files - Navigate to [releases](https://github.com/jlbcontrols/PidbotHistorian/releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
+* Download the project file, UDT definitions, and tag group config files - Navigate to [releases](../../releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
 * Restore the .proj file following Ignition's [project import instructions](https://docs.inductiveautomation.com/display/DOC80/Project+Export+and+Import).
 * Using the Ignition Designer, import the PidbotTypes.json file into the `Data Types` tag folder.
 * Using the Ignition Designer, import the PidbotTagGroups.json file into tag groups.
 * Using the Ignition Gateway webpage, create a user source called `PidbotUserSource`. Create three roles in the user source: `Administrator`,`Engineer`, and `Tuner`.
 * Create a user that has the `Administrator` role so you can login to a Client with full privelages.
-* Follow the instructions in the [Database Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#Database-Setup), [Modules Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#Modules-Setup), and [OPC Setup](https://github.com/jlbcontrols/PidbotHistorian/blob/master/README.md#OPC-Setup) sections below to complete the setup.
+* Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
 
 ### Database Setup
 * Create a MySQL database (other databases have not been tested yet). On the Ignition Gateway webpage, under Config >> Databases >> Connections, create (or edit) a database connection called `pidtuningdb`. Change the configuration of this connection as necessary to connect with your database.
