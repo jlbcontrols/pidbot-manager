@@ -1,0 +1,9 @@
+[
+  {
+    "historyMaxAge": 1,
+    "historyTimeDeadband": 1000,
+    "historyMaxAgeUnits": "WEEK",
+    "name": "PidbotRecordingMedium",
+    "historyTimeDeadbandUnits": "MS"
+  }
+]

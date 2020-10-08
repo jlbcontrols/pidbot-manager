@@ -1,0 +1,15 @@
+{
+    "dataType": "String", 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": "New Display", 
+    "valueSource": "memory", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

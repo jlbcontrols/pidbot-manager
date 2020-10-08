@@ -1,0 +1,6 @@
+# Set the default behavior, in case core.autocrlf is not set.
+* text=auto
+
+# Force LF line endings on checkout for project text files. Most important for project script files: if this is not set, nuisance changes (line ending only) will be detected, causing resource.json files to update.
+*.json text eol=lf
+*.py text eol=lf

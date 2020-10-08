@@ -1,0 +1,20 @@
+{
+    "dataType": "Int4", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTimeDeadbandUnits": "MIN", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 0, 
+    "valueSource": "memory"
+}

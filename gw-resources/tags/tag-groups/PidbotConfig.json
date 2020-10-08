@@ -1,0 +1,7 @@
+[
+  {
+    "readAfterWrite": false,
+    "rate": 5000,
+    "name": "PidbotConfig"
+  }
+]

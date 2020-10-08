@@ -1,0 +1,6 @@
+{
+    "dataType": "Int4", 
+    "tagType": "AtomicTag", 
+    "value": 60, 
+    "valueSource": "memory"
+}

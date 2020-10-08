@@ -1,0 +1,24 @@
+{
+    "dataType": "Float8", 
+    "deadband": 0.0, 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTimeDeadbandUnits": "MIN", 
+    "sourceTagPath": {
+        "bindType": "parameter", 
+        "binding": "{P_PIDE_Path}/Config/CVEUMax"
+    }, 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "valueSource": "memory"
+}

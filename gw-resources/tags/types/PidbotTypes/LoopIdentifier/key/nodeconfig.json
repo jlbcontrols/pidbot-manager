@@ -1,0 +1,12 @@
+{
+    "dataType": "String", 
+    "documentation": "Unique identifier for tuning log database entries. SystemName and TagProvider are included in the key, in case remote/multiple tag providers use the same tuning log database. If you are only using one tag provider, and would prefer not to depend on gateway & provider names, simply use PathToParentFolder instead.", 
+    "expression": "{[System]Gateway/SystemName} + \":[\" + {[.]tagProvider} + \"]\" + {PathToInstanceParentFolder}", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": "", 
+    "valueSource": "expr"
+}

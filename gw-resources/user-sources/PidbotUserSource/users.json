@@ -1,0 +1,59 @@
+{
+    "userSource": "PidbotUserSource", 
+    "userList": [
+        {
+            "firstname": null, 
+            "notes": null, 
+            "contactInfo": [], 
+            "roles": [
+                "Administrator"
+            ], 
+            "language": "en", 
+            "lastname": null, 
+            "schedule": "Always", 
+            "badge": null, 
+            "scheduleAdjustements": [], 
+            "username": "defaultAdmin"
+        }, 
+        {
+            "firstname": null, 
+            "notes": null, 
+            "contactInfo": [], 
+            "roles": [
+                "Engineer"
+            ], 
+            "language": "en", 
+            "lastname": null, 
+            "schedule": "Always", 
+            "badge": null, 
+            "scheduleAdjustements": [], 
+            "username": "defaultEngr"
+        }, 
+        {
+            "firstname": null, 
+            "notes": null, 
+            "contactInfo": [], 
+            "roles": [
+                "Tuner"
+            ], 
+            "language": "en", 
+            "lastname": null, 
+            "schedule": "Always", 
+            "badge": null, 
+            "scheduleAdjustements": [], 
+            "username": "defaultTuner"
+        }, 
+        {
+            "firstname": null, 
+            "notes": null, 
+            "contactInfo": [], 
+            "roles": [], 
+            "language": "en", 
+            "lastname": null, 
+            "schedule": "Always", 
+            "badge": null, 
+            "scheduleAdjustements": [], 
+            "username": "defaultViewer"
+        }
+    ]
+}

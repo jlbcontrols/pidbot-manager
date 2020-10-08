@@ -1,0 +1,43 @@
+{
+    "dataType": "Float4", 
+    "deadband": 0.0, 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTagGroup": {
+        "bindType": "parameter", 
+        "binding": "{recordingTagGroup}"
+    }, 
+    "historyTimeDeadband": 0.0, 
+    "opcItemPath": {
+        "bindType": "parameter", 
+        "binding": "{opcPrefix}[{plcName}]{plcTag}.SP"
+    }, 
+    "opcServer": {
+        "bindType": "parameter", 
+        "binding": "{opcServName}"
+    }, 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sampleMode": "TagGroup", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{recordingTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 0.0, 
+    "valueSource": "opc", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

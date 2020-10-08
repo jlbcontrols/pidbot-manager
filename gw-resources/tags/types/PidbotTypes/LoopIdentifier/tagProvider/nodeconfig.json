@@ -1,0 +1,20 @@
+{
+    "dataType": "String", 
+    "documentation": "The UDT instance's tag provider name.  The provider is found using an ugly method, because there doesn't seem to be another way: The tag event script writes to the value of this tag. This tag is only referenced by the \"loopKey\" member tag of this UDT.", 
+    "eventScripts": [
+        {
+            "eventid": "qualityChanged", 
+            "script": "\t# The tagPath property contains the tag provider's name in brackets.\n\t# The provider name is derived from the tagPath, then written to the value of this tag.\n\tproviderName = tagPath[tagPath.find(\"[\")+1:tagPath.find(\"]\")]\n\tsystem.tag.write(tagPath,providerName)"
+        }
+    ], 
+    "sourceTagPath": {
+        "bindType": "parameter", 
+        "binding": "{PathToParentFolder}/New Tag"
+    }, 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "valueSource": "memory"
+}
