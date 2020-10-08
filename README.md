@@ -1,17 +1,31 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/46946127/94707061-fdf53e00-0310-11eb-839c-0bb206fff45e.png" alt="Pidbot Manager"/><br/>
+  <img src="./docs/banner-logo" alt="Pidbot Manager"/><br/>
   Industrial PID Controller Management - tuning, logging, monitoring and configuration.
 </p>  
 
-# Requirements  
+# Features
+* Easy PID import. Browse PLCs for PID tags, and drag them in.
+* Compatible with most PLC based PID controllers.
+* Simple, **effective** tuning procedure.
+* Single interface for all PID types.
+* Automatically documents every tuning session.
+* Built-in historian.
+* PID variable and configuration charts help you troubleshoot and optimize.
+* Easy access to PID data via external DB.
+* Visualize and organize PIDs with drag and drop ease.
+* User management, role based restrictions.
+ 
+# Using Pidbot Manager
+Head to the [Pidbot Manager Wiki](NEED LINK!!!!!!!!!) for user instructions.
+
+![](./docs/tune-and-log.gif)
+
+# Setup
+
+### Requirements  
 * Ignition v8.0.12+
 * [Pidbot](https://www.jlbcontrols.com/pidbot) v1.10.2+
 * MySQL v8.0.17
-
-# User Instructions
-For information on using the Pidbot Manager project to tune PID controllers in your facility, please head to the Pidbot Manager Wiki.
-
-# Setup Instructions
 
 ### Setup Option 1: Restore a Gateway Backup
 * Download the .gwbk file - Navigate to [releases](https://github.com/jlbcontrols/PidbotHistorian/releases), click assets, then click on the .gwbk file.
@@ -20,7 +34,7 @@ For information on using the Pidbot Manager project to tune PID controllers in y
 
 ### Setup Option 2: Add the project to an existing Ignition Gateway.
 * Download the project file, UDT definitions, and tag group config files - Navigate to [releases](https://github.com/jlbcontrols/PidbotHistorian/releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
-* Restore the project file following Ignition's [project import instructions](https://docs.inductiveautomation.com/display/DOC80/Project+Export+and+Import).
+* Restore the .proj file following Ignition's [project import instructions](https://docs.inductiveautomation.com/display/DOC80/Project+Export+and+Import).
 * Using the Ignition Designer, import the PidbotTypes.json file into the `Data Types` tag folder.
 * Using the Ignition Designer, import the PidbotTagGroups.json file into tag groups.
 * Using the Ignition Gateway webpage, create a user source called `PidbotUserSource`. Create three roles in the user source: `Administrator`,`Engineer`, and `Tuner`.
@@ -43,4 +57,3 @@ Two Third-Party modules are used in this project. The Pidbot module is essential
 # User Source, Usernames & Passwords 
 * If you restored from Gateway Backup (Setup Option 1), you can login to the gateway with username: `admin`, password `password`. There will also be a number of default users configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
 * The project's user source is `PidbotUserSource` by default. Note: This means that users must belong to `PidbotUserSource` to log into a client.  
-
