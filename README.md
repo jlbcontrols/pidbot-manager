@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/banner-logo" alt="Pidbot Manager"/><br/>
+  <img src="./docs/banner-logo.png" alt="Pidbot Manager"/><br/>
   Industrial PID Controller Management - tuning, logging, monitoring and configuration.
 </p>  
 
