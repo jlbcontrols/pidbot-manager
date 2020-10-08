@@ -8,7 +8,7 @@
 * Compatible with most PLC based PID controllers.
 * Simple, **effective** tuning procedure.
 * Single interface for all PID types.
-* Automatically documents every tuning session.
+* Logs every tuning session.
 * Built-in historian.
 * PID variable and configuration charts help you troubleshoot and optimize.
 * Easy access to PID data via external DB.
