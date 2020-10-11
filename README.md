@@ -100,6 +100,10 @@ Two Third-Party modules are used in this project. The Pidbot module is essential
 * Setup OPC server connections, and PLC connections to access your PID controllers. The easiest way is to use Ignition's built-in OPC-UA Server, and create a device connection using the Ignition Gateway webpage, under OPC UA >> Device Connections.
 * If you restored from Gateway Backup (Setup Option 1), there will be a device called `plc1` configured already. You can edit the connectivity settings to connect with your device, or create a new device.
 
-# User Source, Usernames & Passwords 
-* If you used Docker, or restored from Gateway Backup (Setup Option 1), you can login to the Ignition Gateway with username: `admin`, password `password`. There will also be a number of default users configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
+# User Sources, Usernames & Passwords 
+### Gateway
+* Login credentials for the Ignition Gateway webpage are username: `admin`, password `password`.
+* Gateway uses the `Default` user source.
+### Client
 * The project's user source is `PidbotUserSource` by default. Note: This means that users must belong to `PidbotUserSource` to log into a client.  
+* Default users are configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
