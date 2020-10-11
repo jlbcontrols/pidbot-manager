@@ -34,11 +34,11 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ### Setup Option 2: Add the project to an existing Ignition Gateway.
 * Download the project file, UDT definitions, and tag group config files - Navigate to [releases](../../releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
+* Using the Ignition Gateway webpage, create a user source called `PidbotUserSource`. Create three roles in the user source: `Administrator`,`Engineer`, and `Tuner`.
+* Create a user that has the `Administrator` role so you can login to a Client with full privelages.
 * Restore the .proj file following Ignition's [project import instructions](https://docs.inductiveautomation.com/display/DOC80/Project+Export+and+Import).
 * Using the Ignition Designer, import the PidbotTypes.json file into the `Data Types` tag folder.
 * Using the Ignition Designer, import the PidbotTagGroups.json file into tag groups.
-* Using the Ignition Gateway webpage, create a user source called `PidbotUserSource`. Create three roles in the user source: `Administrator`,`Engineer`, and `Tuner`.
-* Create a user that has the `Administrator` role so you can login to a Client with full privelages.
 * Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
 
 ### Database Setup
