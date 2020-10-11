@@ -64,11 +64,10 @@ networks:
 ```
 * Open a terminal in the folder where the docker-compose file is located, and run `docker-compose up`.
 * Open the Ignition Gateway webpage - `http://localhost:8089`.
-* Download the Vision Client launcher from the home page of the Gateway Webpage, and run it. Manually Add the Gateway if necessary `http://localhost:8089`.
+* Download the Vision Client launcher from the home page of the Gateway Webpage, and install. Manually add the Gateway if necessary `http://localhost:8089`.
 * Launch the Pidbot Manager project, and login with username: `defaultAdmin`, password `password`.
 
 # Manual Setup
-
 ### Requirements  
 * Ignition v8.0.16
 * [Pidbot](https://www.jlbcontrols.com/pidbot) v1.10.2+
