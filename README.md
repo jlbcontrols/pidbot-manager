@@ -28,7 +28,7 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ### Instructions
 * Create a file called `docker-compose.yml` on your host computer.
-* Paste the example below into your docker-compose file, or edit if necessary. The example below will work with no additional Gateway configuration required. 
+* Paste the example below into your docker-compose file, or edit if necessary. The example below works with no additional Gateway configuration required. 
 ```yaml
 version: '3.8'
 services:
@@ -77,7 +77,7 @@ networks:
 ### Option 1: Restore a Gateway Backup
 * Download the .gwbk file - Navigate to [releases](../../releases), click assets, then click on the .gwbk file.
 * Restore the .gwbk following Ignition's [gateway restore instructions](https://docs.inductiveautomation.com/display/DOC80/Gateway+Backup+and+Restore).
-* Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
+* Follow the instructions in the [Database Setup](Database-Setup), [Modules Setup](#Modules-Setup), and [OPC Setup](#OPC-Setup) sections below to complete the setup.
 
 ### Option 2: Add the project to an existing Ignition Gateway.
 * Download the project file, UDT definitions, and tag group config files - Navigate to [releases](../../releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
