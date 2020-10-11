@@ -63,9 +63,10 @@ networks:
   db:
 ```
 * Open a terminal in the folder where the docker-compose file is located, and run `docker-compose up`.
-* Open the Ignition Gateway webpage - `http://localhost:8089`.
+* Open the Ignition Gateway webpage - `http://localhost:8089`, and [login](#user-sources-usernames--passwords).
+* Follow instructions in the [OPC Setup](#OPC-Setup) section to connect to your PLC.
 * Download the Vision Client launcher from the home page of the Gateway Webpage, and install. Manually add the Gateway if necessary `http://localhost:8089`.
-* Launch the Pidbot Manager project, and login with username: `defaultAdmin`, password `password`.
+* Launch the Pidbot Manager project, and [login](#user-sources-usernames--passwords).
 
 # Manual Setup
 ### Requirements  
