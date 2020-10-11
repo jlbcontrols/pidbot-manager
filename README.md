@@ -28,7 +28,7 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ### Instructions
 * Create a file called `docker-compose.yml` on your host computer.
-* Paste the example below into your docker-compose file, or edit if necessary. The example will work with no additional Gateway configuration required. 
+* Paste the example below into your docker-compose file, or edit if necessary. The example below will work with no additional Gateway configuration required. 
 ```yaml
 version: '3.8'
 services:
