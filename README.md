@@ -27,9 +27,45 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 * Docker Compose
 
 ### Instructions
-* Copy the 
-
-
+* Create a file called `docker-compose.yml` on your host computer.
+* Paste the example below into your docker-compose file, or edit if necessary. The example will work with no additional Gateway configuration required. 
+```yaml
+version: '3.8'
+services:
+  pbmgr-gateway:
+    build:
+      context:
+        .
+      dockerfile: Dockerfile
+    ports:
+      - "8089:8088"
+    networks:
+       - db
+    environment:
+      GATEWAY_ADMIN_PASSWORD: password
+      IGNITION_EDITION: full
+      TZ: "America/New_York"
+    restart: unless-stopped
+  pbmgr-db:
+    image: mariadb:10.5
+    ports:
+      - "3307:3306"
+    networks:
+       - db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: pbmgrdb
+      MYSQL_USER: ignition
+      MYSQL_PASSWORD: password
+      TZ: "America/New_York"
+    restart: unless-stopped
+networks:
+  db:
+```
+* Open a terminal in the folder where the docker-compose file is located, and run `docker-compose up`.
+* Open the Ignition Gateway webpage - `http://localhost:8089`.
+* Download the Vision Client launcher from the home page of the Gateway Webpage, and run it. Manually Add Gateway `http://localhost:8089`.
+* Launch the Pidbot Manager project, and login with username: `defaultAdmin`, password `password`.
 
 # Manual Setup
 
