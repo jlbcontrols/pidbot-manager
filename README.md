@@ -64,7 +64,7 @@ networks:
 ```
 * Open a terminal in the folder where the docker-compose file is located, and run `docker-compose up`.
 * Open the Ignition Gateway webpage - `http://localhost:8089`.
-* Download the Vision Client launcher from the home page of the Gateway Webpage, and run it. Manually Add Gateway `http://localhost:8089`.
+* Download the Vision Client launcher from the home page of the Gateway Webpage, and run it. Manually Add the Gateway if necessary `http://localhost:8089`.
 * Launch the Pidbot Manager project, and login with username: `defaultAdmin`, password `password`.
 
 # Manual Setup
@@ -102,5 +102,5 @@ Two Third-Party modules are used in this project. The Pidbot module is essential
 * If you restored from Gateway Backup (Setup Option 1), there will be a device called `plc1` configured already. You can edit the connectivity settings to connect with your device, or create a new device.
 
 # User Source, Usernames & Passwords 
-* If you restored from Gateway Backup (Setup Option 1), you can login to the gateway with username: `admin`, password `password`. There will also be a number of default users configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
+* If you used Docker, or restored from Gateway Backup (Setup Option 1), you can login to the Ignition Gateway with username: `admin`, password `password`. There will also be a number of default users configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
 * The project's user source is `PidbotUserSource` by default. Note: This means that users must belong to `PidbotUserSource` to log into a client.  
