@@ -20,19 +20,30 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ![](./docs/tune-and-log.gif)
 
-# Setup
+
+# Quick Setup with Docker
+### Requirements
+* Docker
+* Docker Compose
+
+### Instructions
+* Copy the 
+
+
+
+# Manual Setup
 
 ### Requirements  
-* Ignition v8.0.12+
+* Ignition v8.0.16
 * [Pidbot](https://www.jlbcontrols.com/pidbot) v1.10.2+
 * MySQL v8.0.17
 
-### Setup Option 1: Restore a Gateway Backup
+### Option 1: Restore a Gateway Backup
 * Download the .gwbk file - Navigate to [releases](../../releases), click assets, then click on the .gwbk file.
 * Restore the .gwbk following Ignition's [gateway restore instructions](https://docs.inductiveautomation.com/display/DOC80/Gateway+Backup+and+Restore).
 * Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
 
-### Setup Option 2: Add the project to an existing Ignition Gateway.
+### Option 2: Add the project to an existing Ignition Gateway.
 * Download the project file, UDT definitions, and tag group config files - Navigate to [releases](../../releases), click assets, then click on the PidbotManager.proj file, PidbotTypes.json file, and PidbotTagGroups.json file.
 * Using the Ignition Gateway webpage, create a user source called `PidbotUserSource`. Create three roles in the user source: `Administrator`,`Engineer`, and `Tuner`.
 * Create a user that has the `Administrator` role so you can login to a Client with full privelages.
