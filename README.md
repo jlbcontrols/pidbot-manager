@@ -86,7 +86,7 @@ networks:
 * Restore the .proj file following Ignition's [project import instructions](https://docs.inductiveautomation.com/display/DOC80/Project+Export+and+Import).
 * Using the Ignition Designer, import the PidbotTypes.json file into the `Data Types` tag folder.
 * Using the Ignition Designer, import the PidbotTagGroups.json file into tag groups.
-* Follow the instructions in the [Database Setup](./README.md#Database-Setup), [Modules Setup](./README.md#Modules-Setup), and [OPC Setup](./README.md#OPC-Setup) sections below to complete the setup.
+* Follow the instructions in the [Database Setup](#Database-Setup), [Modules Setup](#Modules-Setup), and [OPC Setup](#OPC-Setup) sections below to complete the setup.
 
 ### Database Setup
 * Create a MySQL database (other databases have not been tested yet). On the Ignition Gateway webpage, under Config >> Databases >> Connections, create (or edit) a database connection called `pidtuningdb`. Change the configuration of this connection as necessary to connect with your database.
