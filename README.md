@@ -71,8 +71,8 @@ networks:
 # Manual Setup
 ### Requirements  
 * Ignition v8.0.16
-* [Pidbot](https://www.jlbcontrols.com/pidbot) v1.10.2+
-* MySQL v8.0.17
+* [Pidbot](https://www.jlbcontrols.com/pidbot) v1.10.2
+* MariaDB v10.5
 
 ### Option 1: Restore a Gateway Backup
 * Download the .gwbk file - Navigate to [releases](../../releases), click assets, then click on the .gwbk file.
@@ -89,7 +89,8 @@ networks:
 * Follow the instructions in the [Database Setup](#Database-Setup), [Modules Setup](#Modules-Setup), and [OPC Setup](#OPC-Setup) sections below to complete the setup.
 
 ### Database Setup
-* Create a MySQL database (other databases have not been tested yet). On the Ignition Gateway webpage, under Config >> Databases >> Connections, create (or edit) a database connection called `pidtuningdb`. Change the configuration of this connection as necessary to connect with your database.
+* Create a database. On the Ignition Gateway webpage, under Config >> Databases >> Connections, create (or edit) a database connection called `pidtuningdb`. Change the configuration of this connection as necessary to connect with your database.
+* This project has been tested with MariaDB v10.5 and MySQL v8.0.17. Other database types may be possible, but could require updates to Named Queries to function properly.
 
 ### Modules Setup
 Two Third-Party modules are used in this project. The Pidbot module is essential, and responsible for PID tuning. The Vision Client OPC Browser module is used to find PID tags in connected PLCs, and create UDT instance tags for them.
@@ -99,7 +100,7 @@ Two Third-Party modules are used in this project. The Pidbot module is essential
 
 ### OPC Setup
 * Setup OPC server connections, and PLC connections to access your PID controllers. The easiest way is to use Ignition's built-in OPC-UA Server, and create a device connection using the Ignition Gateway webpage, under OPC UA >> Device Connections.
-* If you restored from Gateway Backup (Setup Option 1), there will be a device called `plc1` configured already. You can edit the connectivity settings to connect with your device, or create a new device.
+* If you used Docker or restored a Gateway Backup, there will be a device called `plc1` configured already. You can edit the connectivity settings to connect with your device, or create a new device.
 
 # User Sources, Usernames & Passwords 
 ### Gateway
