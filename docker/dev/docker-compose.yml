@@ -3,8 +3,8 @@ services:
   pbmgr-gateway:
     build:
       context:
-        ../..
-      dockerfile: docker/dev/Dockerfile
+        .
+      dockerfile: Dockerfile
     ports:
       - "8089:8088"
     networks:
