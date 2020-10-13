@@ -3,11 +3,11 @@ USER root
 
 RUN apt-get update && apt-get install -y git
 
-# Clone Ignition Version Control Tools project
+# Clone version control tools project
 RUN mkdir /var/lib/ignition/data/projects && cd /var/lib/ignition/data/projects && \
     git clone https://github.com/jlbcontrols/ignition-vcs-tools.git
 
-# Create project folder
+# Create folder for the development project
 RUN mkdir /var/lib/ignition/data/projects/pidbot-manager
 
 # Modules
