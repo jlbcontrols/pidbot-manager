@@ -10,7 +10,7 @@ services:
     networks:
        - db
     volumes:
-      - ../..:/var/lib/ignition/data/projects/pidbot-manager
+      - pidbot-manager-repo:/var/lib/ignition/data/projects/pidbot-manager
 #      - ../..:/var/lib/ignition/data/projects/pidbot-manager
     environment:
       GATEWAY_ADMIN_PASSWORD: password
@@ -32,3 +32,10 @@ services:
     restart: unless-stopped
 networks:
   db:
+volumes:
+  pidbot-manager-repo:
+    driver: local
+    driver_opts:
+      type: none
+      device: $PWD
+      o: bind
