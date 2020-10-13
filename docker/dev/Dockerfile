@@ -1,13 +1,11 @@
 FROM kcollins/ignition:8.0.16
 USER root
 
-# Build Arguments for UID/GID
-ARG IGNITION_UID=1000
+# Match typical linux user/group (TODO: Make this a build arg instead)
 ENV IGNITION_UID=1000
-ARG IGNITION_GID=1000
 ENV IGNITION_GID=1000
 
-
+# Install Git
 RUN apt-get update && apt-get install -y git
 
 # Clone version control tools project
@@ -23,16 +21,8 @@ RUN mkdir /modules && cd /modules && \
     curl -L -s "https://github.com/jlbreleases/pb-rel/releases/download/v1.10.2/pidbot-1.10.2-20200922.modl" -O && \
     curl -L -s "https://github.com/jlbcontrols/vision-client-opc-browser/releases/download/v1.10.0-beta/vcob-1.10.0-beta-20201003.modl" -O
 
-
-
-
-
-# Setup dedicated user, map file permissions, and set execution flags
-RUN usermod -u 1000 ignition && groupmod -g 1000 ignition
-
-
-# Copy Ignition Installation from Build Image
+# Modify user/group from base image, and update file ownership.
+RUN usermod -u IGNITION_UID ignition && groupmod -g ENV IGNITION_GID ignition
 RUN chown -R ${IGNITION_UID}:${IGNITION_GID} ${IGNITION_INSTALL_USERHOME} ${IGNITION_INSTALL_LOCATION} /var/lib/ignition /var/log/ignition
-
 
 USER ${IGNITION_UID}
