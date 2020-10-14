@@ -1,0 +1,6 @@
+{
+    "dataType": "String", 
+    "tagType": "AtomicTag", 
+    "value": "Chart1", 
+    "valueSource": "memory"
+}

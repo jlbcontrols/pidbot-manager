@@ -1,0 +1,41 @@
+{
+    "dataType": "Int4", 
+    "parameters": {
+        "configTagGroup": {
+            "dataType": "String", 
+            "value": "PidbotConfig"
+        }, 
+        "histProvName": {
+            "dataType": "String", 
+            "value": "pidtuningdb"
+        }, 
+        "opcPrefix": {
+            "dataType": "String", 
+            "value": ""
+        }, 
+        "opcServName": {
+            "dataType": "String", 
+            "value": "Ignition OPC UA Server"
+        }, 
+        "plcName": {
+            "dataType": "Integer", 
+            "value": {
+                "bindType": "parameter", 
+                "binding": "{plcName}"
+            }
+        }, 
+        "plcTag": {
+            "dataType": "Integer", 
+            "value": {
+                "bindType": "parameter", 
+                "binding": "{plcTag}"
+            }
+        }, 
+        "recordingTagGroup": {
+            "dataType": "String", 
+            "value": "PidbotRecordingSlow"
+        }
+    }, 
+    "tagType": "UdtType", 
+    "value": 0
+}

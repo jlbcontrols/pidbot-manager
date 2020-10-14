@@ -1,0 +1,44 @@
+{
+    "dataType": "Float4", 
+    "deadband": 0.0, 
+    "deriveExpressionGetter": "", 
+    "deriveExpressionSetter": "", 
+    "expression": "{[.]_source/OUT} * ({[.]cvScaleHigh}-{[.]cvScaleLow})/100", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTagGroup": {
+        "bindType": "parameter", 
+        "binding": "{recordingTagGroup}"
+    }, 
+    "historyTimeDeadband": 0.0, 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sampleMode": "TagGroup", 
+    "scaleMode": "Off", 
+    "scaledHigh": {
+        "bindType": "parameter", 
+        "binding": "{[.]cvScaleHigh}"
+    }, 
+    "sourceTagPath": "", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{recordingTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 0.0, 
+    "valueSource": "expr", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

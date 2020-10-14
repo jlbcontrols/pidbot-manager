@@ -1,0 +1,20 @@
+{
+  "scope": "C",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "window.bin",
+    "thumbnail.png"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "admin",
+      "timestamp": "2020-10-05T18:30:17Z"
+    },
+    "xml-format-version": 1,
+    "open-on-start": true,
+    "parameter-names": "pidGroupFolderPath,pidGroupPathData,pidGroupUdtPath",
+    "lastModificationSignature": "975ce7c4c3be090e1bb011e0ef375e61c0a15082ca79db54ac2c3e1363a8a379"
+  }
+}

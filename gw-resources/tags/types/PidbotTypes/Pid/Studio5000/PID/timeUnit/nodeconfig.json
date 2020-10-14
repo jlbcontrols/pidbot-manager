@@ -1,0 +1,35 @@
+{
+    "dataType": "Int4", 
+    "documentation": "", 
+    "expression": "// For the Studio5000 PID, the PID time units are determined based on the form of the PID equation.\r\nif(\r\n\t{[.]pidForm}=0,\r\n\t3,\t//Seconds\r\n\t4\t//Minutes\r\n)", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTimeDeadbandUnits": "MIN", 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sourceTagPath": {
+        "bindType": "parameter", 
+        "binding": "{P_PIDE_Path}/Config/CtrlAction"
+    }, 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 4, 
+    "valueSource": "expr", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "dataType": "String", 
+    "expression": "if(\r\n\t{[.]_source/MO},\r\n\t'External',\r\n\tif(\r\n\t\t{[.]_source/SWM},\r\n\t\t'Manaul',\r\n\t\t'Auto'\r\n\t)\r\n)\t", 
+    "tagType": "AtomicTag", 
+    "valueSource": "expr"
+}

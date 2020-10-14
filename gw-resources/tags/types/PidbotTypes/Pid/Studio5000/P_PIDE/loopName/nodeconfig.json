@@ -1,0 +1,29 @@
+{
+    "dataType": "String", 
+    "deadband": 0.0, 
+    "documentation": "Label displayed on the tuning dashboard for this loop.", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": false, 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{Tuning DB}"
+    }, 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sourceTagPath": "", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": "New P_PIDE Loop", 
+    "valueSource": "memory", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

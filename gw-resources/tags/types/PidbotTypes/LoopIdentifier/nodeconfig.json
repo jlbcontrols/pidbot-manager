@@ -1,0 +1,12 @@
+{
+    "parameters": {
+        "PathToInstanceParentFolder": {
+            "dataType": "Integer", 
+            "value": {
+                "bindType": "parameter", 
+                "binding": "{PathToParentFolder}"
+            }
+        }
+    }, 
+    "tagType": "UdtType"
+}

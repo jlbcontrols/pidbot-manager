@@ -1,0 +1,37 @@
+{
+    "dataType": "Float4", 
+    "deadband": 0.0, 
+    "documentation": "PID output cv scaled from 0-100%. The cv used by pidbot refers to this tag, and scales to engineering units.", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": false, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyTimeDeadband": 0.0, 
+    "opcItemPath": {
+        "bindType": "parameter", 
+        "binding": "{opcPrefix}[{plcName}]{plcTag}.OUT"
+    }, 
+    "opcServer": {
+        "bindType": "parameter", 
+        "binding": "{opcServName}"
+    }, 
+    "readOnly": false, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sampleMode": "TagGroup", 
+    "scaleMode": "Off", 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{recordingTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 0.0, 
+    "valueSource": "opc", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}

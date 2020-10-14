@@ -1,0 +1,6 @@
+{
+    "dataType": "String", 
+    "expression": "if(\r\n\t{[.]_source/Sts_Hand},\r\n\t\"External\",\r\n\tif(\r\n\t\t{[.]_source/Sts_Ovrd},\r\n\t\t\"Override\",\r\n\t\tif(\r\n\t\t\t{[.]_source/Sts_Man},\r\n\t\t\t\"Manual\",\r\n\t\t\tif(\r\n\t\t\t\t{[.]_source/Sts_Auto},\r\n\t\t\t\t\"Auto\",\r\n\t\t\t\tif(\r\n\t\t\t\t\t{[.]_source/Sts_Casc},\r\n\t\t\t\t\t\"Cascade\",\r\n\t\t\t\t\t\"Unknown\" // Other\r\n\t\t\t\t)\r\n\t\t\t)\r\n\t\t)\r\n\t)\r\n)", 
+    "tagType": "AtomicTag", 
+    "valueSource": "expr"
+}

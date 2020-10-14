@@ -1,0 +1,7 @@
+{
+  "title": "PidbotHistorian",
+  "description": "Pidbot Tuning Dashboard template that uses Historian Data. UDTs provided for common industrial PID controllers.",
+  "parent": "",
+  "enabled": true,
+  "inheritable": false
+}

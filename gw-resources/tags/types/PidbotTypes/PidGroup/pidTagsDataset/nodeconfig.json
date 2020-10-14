@@ -1,0 +1,6 @@
+{
+    "dataType": "DataSet", 
+    "tagType": "AtomicTag", 
+    "value": "{\"columns\":[{\"name\":\"instancePath\",\"type\":\"java.lang.String\"}],\"rows\":[]}", 
+    "valueSource": "memory"
+}

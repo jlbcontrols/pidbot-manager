@@ -1,0 +1,34 @@
+{
+    "dataType": "Int4", 
+    "documentation": "Value is always '4' (minutes) for P_PIDE", 
+    "historicalDeadband": 0.0, 
+    "historicalDeadbandStyle": "Discrete", 
+    "historyEnabled": true, 
+    "historyMaxAge": 1.0, 
+    "historyMaxAgeUnits": "WEEK", 
+    "historyProvider": {
+        "bindType": "parameter", 
+        "binding": "{histProvName}"
+    }, 
+    "historyTimeDeadbandUnits": "MIN", 
+    "readOnly": true, 
+    "readPermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }, 
+    "sourceTagPath": {
+        "bindType": "parameter", 
+        "binding": "{P_PIDE_Path}/Config/CtrlAction"
+    }, 
+    "tagGroup": {
+        "bindType": "parameter", 
+        "binding": "{configTagGroup}"
+    }, 
+    "tagType": "AtomicTag", 
+    "value": 4, 
+    "valueSource": "memory", 
+    "writePermissions": {
+        "securityLevels": [], 
+        "type": "AllOf"
+    }
+}
