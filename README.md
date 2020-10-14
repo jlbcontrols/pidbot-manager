@@ -75,3 +75,13 @@ Two Third-Party modules are used in this project. The Pidbot module is essential
 ### Client
 * The project's user source is `PidbotUserSource` by default. Note: This means that users must belong to `PidbotUserSource` to log into a client.  
 * Default users are configured in `PidbotUserSource`: `defaultAdmin`, `defaultEngr`, `defaultTuner` and `defaultViewer`. The default password for all users is `password`.
+
+# License Info
+* [Pidbot Manager](./LICENSE)
+### Required Dependencies
+* [Ignition](https://inductiveautomation.com/ignition/license)
+* [Pidbot Module](https://www.jlbcontrols.com/ignition-module-license)
+* [Vision Client OPC Browser Module](https://github.com/jlbcontrols/vision-client-opc-browser/blob/master/LICENSE)
+### Optional Dependencies
+* [MariaDB](https://mariadb.com/kb/en/mariadb-license/)
+* [kcollins/ignition Docker Image](https://github.com/thirdgen88/ignition-docker/blob/master/LICENSE)
