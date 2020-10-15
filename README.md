@@ -28,7 +28,7 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ### Instructions
 * Clone or [download](../../archive/master.zip) this repository.
-* Open a terminal in the [/docker/latest](./docker/latest) folder (locally), and run `docker-compose up`.
+* Open a terminal in the [/docker/release](./docker/release) folder (locally), and run `docker-compose up`.
 * Open the Ignition Gateway webpage - `http://localhost:8089`, and [login](#user-sources-usernames--passwords).
 * Follow instructions in the [OPC Setup](#OPC-Setup) section to connect to your PLC.
 * Download the Vision Client launcher from the Gateway Webpage's home page, and install. Manually add the Gateway if necessary `http://localhost:8089`.
