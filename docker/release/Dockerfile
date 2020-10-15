@@ -2,7 +2,7 @@ FROM kcollins/ignition:8.0.16
 USER root
 
 # Gateway Backup
-RUN curl -L -s "https://github.com/jlbcontrols/pidbot-manager/releases/latest/download/backup.gwbk" -o /restore.gwbk
+RUN curl -L -s "https://github.com/jlbcontrols/pidbot-manager/releases/download/v1.10.0-beta0/backup.gwbk" -o /restore.gwbk
 
 # Modules
 RUN mkdir /modules && cd /modules && \
