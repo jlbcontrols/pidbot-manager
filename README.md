@@ -20,6 +20,15 @@ Head to the [Pidbot Manager Wiki](../../wiki) for user instructions.
 
 ![](./docs/tune-and-log.gif)
 
+# Status
+Pidbot Manager is currently in Beta. Please report any bugs by creating an [Issue](../../issues), or contact JLB Controls.
+
+# Support/Contact
+I want to hear about your experience with Pidbot!  
+Email: [connect@jlbcontrols.com](mailto:support@jlbcontrols.com)  
+Post an Issue: [Pidbot Manager Issues](../../issues)  
+Ignition Forum: [Ignition Third Party Modules](https://forum.inductiveautomation.com/c/3rd-party-modules/8)  
+
 
 # Quick Setup with Docker
 ### Requirements
