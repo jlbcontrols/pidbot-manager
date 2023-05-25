@@ -6,13 +6,14 @@ services:
         .
       dockerfile: Dockerfile
     ports:
-      - "8089:8088"
+      - "8080:8088"
     networks:
        - db
     environment:
       GATEWAY_ADMIN_PASSWORD: password
       IGNITION_EDITION: full
       TZ: "America/New_York"
+      IGNITION_STARTUP_DELAY: 180
     restart: unless-stopped
   pbmgr-db:
     image: mariadb:10.5
